@@ -2,5 +2,7 @@
 
 <%= gravatar_for @user %>
 
+<%= link_to "Edit your profile", edit_user_path(@user) %>
+
 <h3>Articles</h3>
 <%= render '/articles/article' %>
