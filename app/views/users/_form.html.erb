@@ -1,5 +1,5 @@
 <% if @user.errors.any? %>
-  <h2>The following errors prevent the article from being saved:</h2>
+  <h2>The following errors prevent the user from being saved:</h2>
   <ul>
     <% @user.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
@@ -23,6 +23,6 @@
   </p>
 
   <p>
-    <%= f.submit %>
+    <%= f.submit "Sign up" %>
   </p>
 <% end %>
